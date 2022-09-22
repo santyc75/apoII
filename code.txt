@@ -1,55 +1,34 @@
+package alumnos2;
 import java.util.Scanner;
-public class Alumno {
+
+
+public class Alumnos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Scanner in=new Scanner(System.in);
-double alumnoUno;
-double alumnoDos;
-double alumnoTres;
-double alumnoCuatro;
-double alumnoCinco;
-double alumnoSeis;
-double alumnoSiete;
-double alumnoOcho;
-double alumnoNueve;
-double alumnoDiez;
+		
+		
+		Scanner scanner=new Scanner(System.in);
 
-System.out.println("digite la nota del alumno 1");
-alumnoUno=in.nextDouble();
-System.out.println("digite la nota del alumno 2");
-alumnoDos=in.nextDouble();
-System.out.println("digite la nota del alumno 3");
-alumnoTres=in.nextDouble();
-System.out.println("digite la nota del alumno 4");
-alumnoCuatro=in.nextDouble();
-System.out.println("digite la nota del alumno 5");
-alumnoCinco=in.nextDouble();
-System.out.println("digite la nota del alumno 6");
-alumnoSeis=in.nextDouble();
-System.out.println("digite la nota del alumno 7");
-alumnoSiete=in.nextDouble();
-System.out.println("digite la nota del alumno 8");
-alumnoOcho=in.nextDouble();
-System.out.println("digite la nota del alumno 9");
-alumnoNueve=in.nextDouble();
-System.out.println("digite la nota del alumno 10");
-alumnoDiez=in.nextDouble();
-
- double [] notas = new double[10];
- notas [0]= alumnoUno;
- notas [1]= alumnoDos;
- notas [2]= alumnoTres;
- notas [3]= alumnoCuatro;
- notas [4]= alumnoCinco;
- notas [5]= alumnoSeis;
- notas [6]= alumnoSiete;
- notas [7]= alumnoOcho;
- notas [8]= alumnoNueve;
- notas [9]= alumnoDiez;
- 
- System.out.println("el alumno con la nota mas alta es" );
- 
- 
+		double numeroMayor=0;
+				int j=0;
+		double [] notas = new double[10];
+		for (int i = 0; i < 10; i++) {
+			System.out.println("digite nota estudiante "+(i+1));
+			double nota = scanner.nextDouble();
+			if(i==0) {
+				numeroMayor=nota;
+			} else if (nota>numeroMayor) {
+				numeroMayor=nota;
+				j=i+1;
+			}
+			
+		}
+		System.out.println("la calificacion mas alta fue:"+numeroMayor);
+		System.out.println("y pertenece al estudiante numero#"+j);
+		
 	}
+		
 }
+					
+	
