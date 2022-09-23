@@ -11,7 +11,7 @@ public class Alumnos {
 		Scanner scanner=new Scanner(System.in);
 
 		double numeroMayor=0;
-				int j=0;
+				int j=1;
 		double [] notas = new double[10];
 		for (int i = 0; i < 10; i++) {
 			System.out.println("digite nota estudiante "+(i+1));
