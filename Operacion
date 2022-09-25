@@ -1,0 +1,35 @@
+SANTIAGO CAMILO CHACON MUÑOZ
+import java.util.Scanner;
+public class Operacion {
+
+	private Alumno [] list=new Alumno [10];
+	private Alumno alumno = new Alumno ();
+	
+	public void recorrerAlumno() {
+		Scanner sc =new Scanner (System.in);
+		
+		for (int i = 0; i < 10; i++) {
+			double numeroMayor=0;
+		    int j=1;
+		
+		System.out.println("ingrese el nombre");
+		alumno.setNombre(sc.next());
+		
+		System.out.println("ingrese el apellido");
+		alumno.setApellido(sc.next());
+		
+		System.out.println("ingrese la nota");
+		alumno.setNota(sc.nextDouble());
+		
+		list[i]= alumno;
+			
+		}
+	
+		for (int i1 = 0; i1 < list.length; i1++) {
+	     System.out.println(list[i1]);
+		}
+		
+		System.out.println("el alumno ingresado es: " +alumno.toString());
+	}
+}
+	
