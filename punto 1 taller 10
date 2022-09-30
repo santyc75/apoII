@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class AñoB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Scanner sc =new Scanner(System.in);
+
+ System.out.println("ingrese el año");
+ int añoBiciesto=sc.nextInt();
+	
+ if ((añoBiciesto % 4 == 0) && ((añoBiciesto % 100 != 0) || (añoBiciesto % 400 == 0)))
+		System.out.println("El año es bisiesto");
+	else
+		System.out.println("El año no es bisiesto");
+	 
+	
+}
+	}
