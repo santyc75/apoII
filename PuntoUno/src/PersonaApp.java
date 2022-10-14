@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
  
-public class Principa {
+public class personaApp {
  
     public static void main(String[] args) {
  
